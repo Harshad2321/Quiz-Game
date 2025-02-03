@@ -1,91 +1,89 @@
-
-```markdown
 # 🎯 Quiz Game
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.9%2B-blue.svg" alt="Python Version">
-  <img src="https://img.shields.io/badge/Project-Type%3A%20CLI-yellow.svg" alt="CLI Project">
-  <img src="https://img.shields.io/github/stars/Harshad2321/quiz-game?style=social" alt="GitHub Stars">
-</p>
-
-🚀 A **fun and interactive quiz game** built using Python! Answer multiple-choice questions, track your progress, and challenge yourself.
+Welcome to the **Python Quiz Game**! 🧠💡 This interactive, CLI-based quiz application tests your knowledge with multiple-choice questions. You can even extend it by adding your own questions using [Open Trivia Database](https://opentdb.com/api_config.php)! 🚀
 
 ---
 
-## 📌 Features
-✅ **Dynamic Questions** - Loads questions from `data.py`  
-✅ **Real-time Score Tracking** - Keeps track of your correct answers  
-✅ **Modular & Object-Oriented** - Uses clean and structured OOP design  
-✅ **Easy to Extend** - Add more questions easily!  
-✅ **ASCII Art & Emoji Enhancements** 🎨✨  
+## 🚀 Features
+
+✅ **Interactive** question-answer format  
+✅ **Score Tracking** to monitor progress  
+✅ **Auto-fetch Questions** dynamically  
+✅ **Beautifully Formatted CLI Experience** 🎨  
+✅ **Easily Extendable** with [Open Trivia Database](https://opentdb.com/api_config.php)  
 
 ---
 
-## 📂 Project Structure
-```
-📁 quiz_game/
-│── 📄 main.py            # Runs the quiz
-│── 📄 question_model.py  # Defines the Question class
-│── 📄 quiz_brain.py      # Contains the logic for the quiz
-│── 📄 data.py            # Stores quiz questions and answers
-│── 📄 README.md          # Documentation
-```
+## 🛠️ Installation & Setup
 
----
-
-## 🚀 How to Run
-
-1️⃣ **Clone the Repository**  
+### 📥 Clone the Repository
 ```bash
-git clone https://github.com/Harshad2321/quiz-game.git
+git clone https://github.com/your-username/quiz-game.git
+cd quiz-game
 ```
-2️⃣ **Navigate to the Project Directory**  
+
+### 🐍 Install Dependencies
 ```bash
-cd quiz_game
+pip install -r requirements.txt
 ```
-3️⃣ **Run the Python Script**  
+
+### ▶️ Run the Quiz
 ```bash
 python main.py
 ```
 
 ---
 
-## 🖥️ Demo Preview
+## 📁 Project Structure
 
 ```
-❓ Q1: What is the capital of France? (True/False)
-💬 Your answer: True
-✅ Correct! 🎉
-
-----------------------------------------
-
-❓ Q2: Is Python an interpreted language? (True/False)
-💬 Your answer: True
-✅ Correct! 🎉
-
-🎊 You've completed the quiz! 🎊
-🏆 Your final score is: 2/2 🎯
+📂 quiz-game
+├── 📄 main.py            # Entry point of the quiz
+├── 📄 quiz_brain.py      # Handles the quiz logic
+├── 📄 question_model.py  # Question structure
+├── 📄 data.py            # Stores the quiz questions
+└── 📄 README.md          # Documentation
 ```
 
 ---
 
-## 🌟 Contribute
+## 🎨 How to Add More Questions?
 
-1. Fork the repo 🍴  
-2. Add new features ✨  
-3. Submit a pull request 🔥  
+You can easily add more questions by using [Open Trivia Database](https://opentdb.com/api_config.php) or manually updating the `data.py` file.
 
----
-
-## 📜 Author
-**Harshad Agrawal**  
-📌 [GitHub](https://github.com/Harshad2321)  
-📌 [LinkedIn](https://www.linkedin.com/in/harshad-agrawal-486964322/)  
-
----
-
-## ⭐ Show Some Love
-If you found this project helpful or interesting, please **leave a star ⭐ on GitHub!**  
-
-💙 **Happy Coding!** 🚀
+### 📝 Example:
+```python
+question_data = [
+    {"question": "What is the capital of France?", "correct_answer": "Paris"},
+    {"question": "Who developed Python?", "correct_answer": "Guido van Rossum"}
+]
 ```
+
+Or fetch live questions using an API:
+```python
+import requests
+response = requests.get("https://opentdb.com/api.php?amount=10&type=boolean")
+data = response.json()["results"]
+```
+
+---
+
+## 🤝 Contributing
+
+💡 Contributions are welcome! Feel free to fork the repository and submit a pull request.
+
+---
+
+## 📜 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+## 💡 Let's Connect!
+
+🔗 [LinkedIn](https://www.linkedin.com/in/harshad-agrawal-486964322/)  
+🐙 [GitHub](https://github.com/Harshad2321)  
+
+🚀 **Happy Coding!** 🎉
+
