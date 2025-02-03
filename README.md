@@ -1,6 +1,3 @@
-Here's a beautifully designed **README.md** file for your **Quiz Game** project:  
-
----
 
 ```markdown
 # 🎯 Quiz Game
